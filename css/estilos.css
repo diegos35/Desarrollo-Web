@@ -1,0 +1,42 @@
+/*
+#  ·················
+#  ··_______________
+#  ·/·___/·___/·___/
+#  /·/__(__··|__··)·
+#  \___/____/____/··
+#  ·················
+*/
+html,body{
+  padding: 0px;
+  margin: 0px;
+  font-size: 12px;
+  font-family: Helvetica;
+}
+
+nav{
+  display: flex; /*Ayuda a pasar de  vertical a horizontal */
+  background-color: #7ACC2D;
+  padding: 10px;
+  color: white; 
+  justify-content: space-between; /*Separa los div en grupo */
+  align-items: center;
+}
+
+nav ul{
+  display: flex;
+}
+
+nav li{
+  padding-left: 20px;
+  list-style:none; /*Quitar el punto de la lista*/
+}
+
+nav li a {
+  color: black;
+  text-decoration: none; /*Quita el subrayado del ancla*/
+}
+
+nav li a:hover{ /*Al apuntar con el clik cambia el color del enlace*/
+  color: white;
+
+}
