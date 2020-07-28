@@ -32,11 +32,58 @@ nav li{
 }
 
 nav li a {
-  color: black;
+
   text-decoration: none; /*Quita el subrayado del ancla*/
 }
 
 nav li a:hover{ /*Al apuntar con el clik cambia el color del enlace*/
   color: white;
 
+}
+/* -------------------------MAIN SECTION */
+
+.main_section{
+  padding:15%;
+  text-align:center; /*Alinea hacia el centro*/ 
+
+}
+
+.product{
+  padding: 10px;  
+  margin-top: -260px;
+
+}
+
+.products{
+  background-image: url("../images/curve.png");  /*Atributo que permite traer un imagen de la carpeta de images*/
+  height: 50px;
+  background-size: cover; /*ocupe el tamaño del div que tiene*/
+  background-position: center top;
+  padding:15%;
+  display: flex;
+}
+
+.product .content{
+  background-color:white;
+  padding: 15px;
+  box-shadow: 0 0 2px #c1bcbc;/*para dar sombra x y grosor y color*/
+}
+
+.img_content{
+  text-align: center; 
+}
+
+.main_button{
+  background-color: #7ACC2D;
+  width: 100%;
+  padding: 10px;
+  font-size: 17px; /*Tamaño de la fuente*/
+  color:white;
+  border:0;
+  cursor: pointer; /*Para poner el puntero como Mano*/
+  border-radius: 2px; /*Anchor del borde*/
+}
+
+.main_button:hover{
+  background-color: #5e8e22; /*Color cambia al pasar el mouse*/
 }
