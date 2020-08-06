@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 /*
 #  ·················
 #  ··_______________
@@ -6,18 +7,32 @@
 #  \___/____/____/··
 #  ·················
 */
+/*Variables*/
+:root{
+  --green-color:#7ACC2D;
+  --white-color: white;
+  --black-color: #313337;
+  --normal:12px;
+
+  /* Espaciado */
+  --space:10px;
+  /* box shadow */
+  --box: 0 0 2px #c1bcbc;
+}
+
+
 html,body{
   padding: 0px;
   margin: 0px;
-  font-size: 12px;
-  font-family: Helvetica;
+  font-size: var(--normal);
+  font-family: 'Open Sans', sans-serif;
 }
 
 nav{
   display: flex; /*Ayuda a pasar de  vertical a horizontal */
-  background-color: #7ACC2D;
-  padding: 10px;
-  color: white; 
+  background-color: var(--green-color);
+  padding: var(--space);
+  color: var(--white-color); 
   justify-content: space-between; /*Separa los div en grupo */
   align-items: center;
 }
@@ -32,12 +47,12 @@ nav li{
 }
 
 nav li a {
-
+  color:var(--black-color);
   text-decoration: none; /*Quita el subrayado del ancla*/
 }
 
 nav li a:hover{ /*Al apuntar con el clik cambia el color del enlace*/
-  color: white;
+  color:var(--white-color);
 
 }
 /* -------------------------MAIN SECTION */
@@ -49,7 +64,7 @@ nav li a:hover{ /*Al apuntar con el clik cambia el color del enlace*/
 }
 
 .product{
-  padding: 10px;  
+  padding: var(--space);  
   margin-top: -260px;
 
 }
@@ -64,9 +79,9 @@ nav li a:hover{ /*Al apuntar con el clik cambia el color del enlace*/
 }
 
 .product .content{
-  background-color:white;
+  background-color:var(--white-color);
   padding: 15px;
-  box-shadow: 0 0 2px #c1bcbc;/*para dar sombra x y grosor y color*/
+  box-shadow:var(--box);/*para dar sombra x y grosor y color*/
 }
 
 .img_content{
@@ -74,11 +89,11 @@ nav li a:hover{ /*Al apuntar con el clik cambia el color del enlace*/
 }
 
 .main_button{
-  background-color: #7ACC2D;
+  background-color: var(--green-color);
   width: 100%;
-  padding: 10px;
+  padding: var(--space);
   font-size: 17px; /*Tamaño de la fuente*/
-  color:white;
+  color:var(--white-color);
   border:0;
   cursor: pointer; /*Para poner el puntero como Mano*/
   border-radius: 2px; /*Anchor del borde*/
