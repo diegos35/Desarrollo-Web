@@ -2,4 +2,12 @@
     body{
         background: yellow;
     }
+
+    .products{
+        display:inherit;   
+        height: auto; /*para que pueda crecer de forma natural*/
+    }
+    .product{
+        margin-top: auto;
+    }
 }
