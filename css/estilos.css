@@ -34,7 +34,7 @@ nav{
   padding: var(--space);
   color: var(--white-color); 
   justify-content: space-between; /*Separa los div en grupo */
-  align-items: center;
+  align-items: center; /*Sirve para alinear el TEXTTO*/
 }
 
 nav ul{
@@ -63,11 +63,6 @@ nav li a:hover{ /*Al apuntar con el clik cambia el color del enlace*/
 
 }
 
-.product{
-  padding: var(--space);  
-  margin-top: -260px;
-
-}
 
 .products{
   background-image: url("../images/curve.png");  /*Atributo que permite traer un imagen de la carpeta de images*/
@@ -77,6 +72,13 @@ nav li a:hover{ /*Al apuntar con el clik cambia el color del enlace*/
   padding:15%;
   display: flex;
 }
+
+.product{
+  padding: var(--space);  
+  margin-top: -260px;
+
+}
+
 
 .product .content{
   background-color:var(--white-color);
@@ -101,4 +103,38 @@ nav li a:hover{ /*Al apuntar con el clik cambia el color del enlace*/
 
 .main_button:hover{
   background-color: #5e8e22; /*Color cambia al pasar el mouse*/
+}
+
+/* Mi parte */
+/*Feature*/
+.feature{
+  padding: 20px;
+  display: flex; 
+}
+
+.feature-content{
+  justify-content: space-between;
+  padding: 80px;
+}
+
+ h2{
+  text-align: center;
+}
+
+/*mebtions*/
+
+.mentions{
+  padding:5px ;
+  display: flex;
+}
+
+.content-mention{
+  justify-content: space-between;
+  padding: 20px;
+
+ 
+}
+
+hr{
+  margin:0 auto; /*Para que la liena no tenga una margen*/
 }
